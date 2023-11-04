@@ -1,0 +1,97 @@
+.al-vacancy {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3, auto);
+
+  &__exp {
+    @include flex-column;
+    grid-column: 1 / 2;
+
+    @include tablet-l {
+      grid-column: 1 / 3;
+    }
+  }
+
+  &__years {
+    font-size: 12.3rem;
+    line-height: 1;
+
+    @include tablet-l {
+      font-size: 10.9rem;
+    }
+
+    @include tablet-s {
+      font-size: 5.2rem;
+    }
+  }
+
+  &__sign {
+    font-size: 2.3rem;
+    line-height: 3.2rem;
+
+    @include tablet-l {
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+
+    @include tablet-s {
+      font-size: 1.6rem;
+      line-height: 1.9rem;
+    }
+  }
+
+  &__description {
+    font-size: 3rem;
+    line-height: 3.9rem;
+    grid-column: 4 / 10;
+    margin-bottom: 10rem;
+    
+    p {
+      margin: 0;
+    }
+    
+    @include tablet-l {
+      font-size: 2.2rem;
+      line-height: 2.8rem;
+      grid-column: 8 / 13;
+      margin-bottom: 9rem;
+    }
+
+    @include tablet-s {
+      font-size: 1.8rem;
+      line-height: 2.6rem;
+      grid-column: 1 / 13;
+      grid-row: 2 / 3;
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__details {
+    grid-column: 4 / 10;
+    grid-row: 2 / 3;
+    margin-bottom: 7.3rem;
+
+    @include tablet-l {
+      grid-column: 1 / 13;
+      margin-bottom: 5.8rem;
+    }
+
+    @include tablet-s {
+      grid-row: 4 / 5;
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__btn {
+    grid-column: 4 / 10;
+    grid-row: 3 / 4;
+
+    @include tablet-l {
+      grid-column: 1 / 12;
+    }
+
+    @include tablet-s {
+      grid-row: 5 / 6;
+    }
+  }
+}

@@ -1,0 +1,73 @@
+.al-tabs {
+
+  &__nav {
+    @include flex-between;
+    gap: 3.5rem;
+    
+    @include tablet-s {
+      overflow-x: scroll;
+    }
+  }
+
+  &__panel {
+    display: none;
+    
+    &--active {
+      display: block;
+    }
+  }
+
+  &__nav {
+    margin-bottom: 8.5rem;
+
+    @include tablet-l {
+      margin-bottom: 5rem;
+    }
+
+    @include tablet-s {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__nav-btn {
+    font-family: var(--al-fontFamilies-drukCyr);
+    font-size: 2.2rem;
+    font-weight: var(--al-fontWeights-medium);
+    line-height: 5.4rem;
+    letter-spacing: 0.044rem;
+    text-transform: uppercase;
+    color: rgba(#fff, 0.8);
+    transition: color 0.3s ease-in-out ;
+
+    &:focus {
+      color: rgba(#fff, 1);
+    }
+
+    &--active {
+      color: rgba(#fff, 1);
+      border-bottom: 0.5rem solid var(--al-colors-white);
+
+      @include tablet-l {
+        padding-bottom: 1.5rem;
+        border-bottom-width: 0.4rem;
+      }
+      
+      @include tablet-s {
+        padding-bottom: 1rem;
+        border-bottom-width: 0.2rem;
+      }
+    }
+
+    @include tablet-l {
+      font-size: 1.8rem;
+      line-height: 2.1rem;
+      letter-spacing: 0.036rem;
+    }
+
+    @include tablet-s {
+      font-size: 1.2rem;
+      line-height: 1.4rem;
+      letter-spacing: 0.024rem;
+    }
+  }
+}

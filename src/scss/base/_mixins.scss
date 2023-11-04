@@ -1,15 +1,3 @@
-@mixin tablet-l {
-  @media (max-width: 1024px) {
-      @content;
-  }
-}
-
-@mixin tablet-s {
-  @media (max-width: 768px) {
-      @content;
-  }
-}
-
 @mixin font-face($name, $weight, $src) {
   @font-face {
     font-family: $name;
@@ -20,4 +8,36 @@
   }
 }
 
-// @include font-face("Inter", 700, "../fonts/Inter-Bold");
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-center-xy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-center-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin tablet-l {
+  @media (max-width: 1024px) {
+      @content;
+  }
+}
+
+@mixin tablet-s {
+  @media (max-width: 767px) {
+      @content;
+  }
+}
