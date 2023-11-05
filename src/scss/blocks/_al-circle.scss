@@ -1,0 +1,42 @@
+.al-circle {
+  position: relative;
+  @include flex-center-xy;
+
+  &__value {
+    font-family: var(--al-fontFamilies-drukCyr);
+    font-size: 13.1rem;
+    line-height: 18.3rem;
+    letter-spacing: 0.2623rem;
+    
+    @include tablet-l {
+      font-size: 7rem;
+      line-height: 9.8rem;
+      letter-spacing: 0.1411rem;
+    }
+    
+    @include tablet-s {
+      font-size: 5.2rem;
+      line-height: 7.3rem;
+      letter-spacing: 0.1044rem;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 46rem;
+    height: 46rem;
+
+    @include tablet-l {
+      width: 28rem;
+      height: 28rem;
+    }
+
+    @include tablet-s {
+      width: 17rem;
+      height: 17rem;
+    }
+  }
+}

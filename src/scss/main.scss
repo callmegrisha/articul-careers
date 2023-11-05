@@ -4,10 +4,16 @@
 @import "./base/fonts";
 @import "./base/vars";
 @import "./base/base";
+@import "./base/animations";
 
 @import "./blocks/al-careers";
+@import "./blocks/al-highlight";
+@import "./blocks/al-advantages";
+@import "./blocks/al-title";
+@import "./blocks/al-circle";
 @import "./blocks/al-accordion";
 @import "./blocks/al-vacancy";
 @import "./blocks/al-vacancy-list";
 @import "./blocks/al-tabs";
+@import "./blocks/al-btn";
 @import "./blocks/al-career-arrow";

@@ -1,0 +1,54 @@
+.al-btn {
+  width: 100%;
+  
+  &--primary {
+    background-color: var(--al-colors-articul);
+    color: var(--al-colors-white);
+    font-family: var(--al-fontFamilies-drukCyr);
+    font-size: 2.8rem;
+    font-weight: var(--al-fontWeights-medium);
+    line-height: 2.6rem;
+    letter-spacing: 0.056rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    @include flex-center-xy;
+    gap: 1.5rem;
+    transition: background-color 0.3s ease-in-out;
+    padding: 2.2rem;
+    border-radius: 12.9rem;
+
+    svg {
+      width: 3.6rem;
+      height: 3.6rem;
+      fill: var(--al-colors-white);
+
+      @include tablet-l {
+        width: 3rem;
+        height: 3rem;
+      }
+
+      @include tablet-s {
+        width: 1.9rem;
+        height: 1.9rem;
+      }
+    }
+
+    &:hover {
+      background-color: lighten(#c31e54, 10%);
+    }
+
+    @include tablet-l {
+      font-size: 2.2rem;
+      letter-spacing: 0.044rem;
+      padding: 1.7rem;
+      gap: 1rem;
+    }
+
+    @include tablet-s {
+      font-size: 1.3rem;
+      line-height: 1.2rem;
+      letter-spacing: 0.0265rem;
+      padding: 1rem;
+    }
+  }
+}

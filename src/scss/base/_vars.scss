@@ -22,4 +22,31 @@
   --al-lineHeights-highlight-desktop: 6.6rem;
   --al-lineHeights-highlight-tablet: 4.6rem;
   --al-lineHeights-highlight-mobile: 3.1rem;
+
+  --advantage-first: 23.8rem;
+  --advantage-second: 41rem;
+  --advantage-third: 25.5rem;
+  --advantage-four: 25.5rem;
+  --advantage-five: 40rem;
+  --title-animation: none;
+}
+
+@include tablet-l {
+  :root {
+    --advantage-first: 17rem;
+    --advantage-second: 30rem;
+    --advantage-third: 17rem;
+    --advantage-four: 19rem;
+    --advantage-five: 30rem;
+  }
+}
+
+@include tablet-s {
+  :root {
+    --advantage-first: 11.5rem;
+    --advantage-second: 19rem;
+    --advantage-third: 11rem;
+    --advantage-four: 12rem;
+    --advantage-five: 18.5rem;
+  }
 }

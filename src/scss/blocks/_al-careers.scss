@@ -16,7 +16,6 @@
     grid-template-rows: repeat(3, auto);
     margin-bottom: 14.2rem;
 
-
     @include tablet-l {
       grid-template-rows: repeat(4, auto);
       margin-bottom: 17rem;
@@ -42,13 +41,24 @@
   }
 
   &__title {
+    position: relative;
     margin: 0;
     width: max-content;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: 100%;
+      background-color: var(--al-colors-black);
+      animation: var(--title-animation);
+    }
 
     &--first {
       grid-column: 5 / 12;
       align-self: flex-end;
-      line-height: 0.8;
+      line-height: 0.9;
 
       @include tablet-l {
         grid-column: 1 / 12;
@@ -78,6 +88,7 @@
     line-height: 3.5rem;
     grid-column: 4 / 7;
     grid-row: 3 / 4;
+    opacity: 0;
 
     @include tablet-l {
       font-size: 2.2rem;
@@ -101,6 +112,7 @@
   &__val {
     grid-column: 9 / 12;
     grid-row: 2 / 4;
+    opacity: 0;
 
     @include tablet-l {
       grid-column: 1 / 4;
@@ -152,6 +164,7 @@
   }
 
   &__team-desc {
+    max-width: 80.8rem;
     font-family: var(--al-fontFamilies-drukCyr);
     font-size: 3.5rem;
     font-weight: var(--al-fontWeights-medium);
@@ -165,6 +178,10 @@
       text-decoration: none;
       color: inherit;
       border-bottom: 0.3rem solid var(--al-colors-white);
+    }
+
+    p {
+      margin: 0;
     }
     
     @include tablet-l {

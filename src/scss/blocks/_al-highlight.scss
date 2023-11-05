@@ -1,0 +1,35 @@
+.al-highlight {
+  font-family: var(--al-fontFamilies-drukCyr);
+  font-weight: var(--al-fontWeights-medium);
+  text-transform: uppercase;
+  border-radius: 150rem;
+  border: 0.3rem solid var(--al-colors-articul);
+  padding: 0 2.4rem;
+  text-align: left;
+  
+  @include tablet-l {
+    padding: 0 1.5rem;
+  }
+  @include tablet-s {
+    padding: 0 1.1rem;
+  }
+
+  &__sign {
+    font-size: var(--al-fontSizes-highlight-desktop);
+    line-height: var(--al-lineHeights-highlight-desktop);
+    letter-spacing: 0.0456rem;
+    white-space: nowrap;
+    
+    @include tablet-l {
+      font-size: var(--al-fontSizes-highlight-tablet);
+      line-height: var(--al-lineHeights-highlight-tablet);
+      letter-spacing: 0.0321rem;
+    }
+    
+    @include tablet-s {
+      font-size: var(--al-fontSizes-highlight-mobile);
+      line-height: var(--al-lineHeights-highlight-mobile);
+      letter-spacing: 0.0214rem;
+    }
+  }
+}
