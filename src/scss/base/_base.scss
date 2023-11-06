@@ -43,3 +43,36 @@ body {
   padding: 0 1.5rem;
   margin: 0 auto;
 }
+
+.al-close-btn {
+  position: fixed;
+  top: 5.9rem;
+  right: 5rem;
+  width: 6.7rem;
+  height: 6.7rem;
+  mix-blend-mode: difference;
+
+  @include tablet-l {
+    top: 3.3rem;
+    right: 3.3rem;
+    width: 3.4rem;
+    height: 3.4rem;
+  }
+
+  @include tablet-s {
+    top: 1.6rem;
+    right: 1.6rem;
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  svg {
+    width: 100%;
+    height: 100%;
+    fill: var(--al-colors-white);
+
+    path {
+      stroke: var(--al-colors-white);
+    }
+  }
+}
